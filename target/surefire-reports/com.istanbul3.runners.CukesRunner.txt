@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: com.istanbul3.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 48.337 s <<< FAILURE! - in com.istanbul3.runners.CukesRunner
+Add custom menu item(Configuring Menu Items)  Time elapsed: 8.31 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [User should be able to see it in menu items] is defined with 1 parameters at 'com.istanbul3.stepdefinitions.MenuItemDefinitions.user_should_be_able_to_see_it_in_menu_items(io.cucumber.datatable.DataTable)'.
+However, the gherkin step has 0 arguments.
+Step text: User should be able to see it in menu items
+
+Open custom menu in new tab(Configuring Menu Items)  Time elapsed: 5.937 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Google]> but was:<[(2) Portal]>
+
+Edit custom menu(Configuring Menu Items)  Time elapsed: 5.671 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-link='https://google.com']//span[1]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QQCV88U', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9246fa4411805e204edbdc332f3f7e74
+*** Element info: {Using=xpath, value=//*[@data-link='https://google.com']//span[1]}
+
+Hide custom menu item(Configuring Menu Items)  Time elapsed: 5.526 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@data-link='http://youtube.com']//span[1]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QQCV88U', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0de8f6264f23326a83051999044ef026
+*** Element info: {Using=xpath, value=//li[@data-link='http://youtube.com']//span[1]}
+
+Show the hidden item(Configuring Menu Items)  Time elapsed: 5.829 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@data-link='http://youtube.com']//span[1]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QQCV88U', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56617}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 914104ab2b9bac10d1e1a166895b3cc8
+*** Element info: {Using=xpath, value=//li[@data-link='http://youtube.com']//span[1]}
+
+Delete custom menu item(Configuring Menu Items)  Time elapsed: 5.56 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@data-link='http://youtube.com']//span[1]"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QQCV88U', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec04e80f0eb724b3edbd653871d1447b
+*** Element info: {Using=xpath, value=//li[@data-link='http://youtube.com']//span[1]}
+
+Collapse menu(Configuring Menu Items)  Time elapsed: 5.121 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-QQCV88U', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\ahmet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 237cafddc0f3df868ae60bb642a7158c
+
